@@ -17,7 +17,7 @@ app.use('/api/courses', courseRoutes);
 app.use('/api/quizzes', quizRoutes);
 
 const PORT = process.env.PORT || 5000;
-const MONGO = process.env.MONGO_URI || 'mongodb://localhost:27017/codex';
+const MONGO = process.env.MONGO_URI || 'mongodb+srv://mayanksaini0416_db_user:%40Mayank0416@cluster0.v0rdlpc.mongodb.net/codex';
 
 mongoose.connect(MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(()=> {
